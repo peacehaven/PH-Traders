@@ -1,13 +1,14 @@
-"""Launch the Fidelity project from the workspace parent directory."""
+"""Command-line entry point for Fidelity holdings."""
 from __future__ import annotations
 
-import os
-import runpy
+import _bootstrap  # re-runs this script inside .venv
+
 import sys
-from pathlib import Path
+
+from broker_positions import main
 
 
-project_dir = Path(__file__).resolve().parent / "Fidelity"
-os.chdir(project_dir)
-sys.path.insert(0, str(project_dir))
-runpy.run_path(str(project_dir / "fidelity.py"), run_name="__main__")
+if __name__ == "__main__":
+    if sys.argv[1:] not in ([], ["all", "holdings"]):
+        raise SystemExit("Usage: python fidelity.py all holdings")
+    raise SystemExit(main(["--config", "config.fidelity.json"]))

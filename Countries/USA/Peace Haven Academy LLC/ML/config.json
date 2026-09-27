@@ -1,0 +1,43 @@
+{
+  "account_name": "Merrill Account",
+  "login_url": "https://olui2.fs.ml.com/login/signin.aspx",
+  "positions_url": "https://olui2.fs.ml.com/TFPHoldings/HoldingsByAccount.aspx?as_cd=1.1.0.1",
+  "chrome_profile_dir": ".chrome-profile",
+  "download_dir": "downloads",
+
+  "timeout_seconds": 15,
+  "login_timeout_seconds": 60,
+  "table_timeout_seconds": 30,
+
+  "selectors": {
+    "login_iframe": "",
+    "different_user_link": "xpath://*[self::a or self::button][contains(normalize-space(.), 'different user ID')]",
+    "username": [
+      "#oid",
+      "xpath://label[normalize-space()='User ID']/following::input[not(@type='hidden' or @type='checkbox' or @type='password')][1]",
+      "input[autocomplete='username']",
+      "input[id*='user' i]",
+      "input[name*='user' i]"
+    ],
+    "password": [
+      "#pass",
+      "input[type='password']"
+    ],
+    "submit": [
+      "#secure-signin-submit",
+      "xpath://*[self::button or self::a or self::input][normalize-space(.)='Log in' or @value='Log in']",
+      "button[type='submit']",
+      "input[type='submit']"
+    ],
+    "logged_in_marker": "xpath://a[contains(@href, '/TFPSummary/') or contains(@href, '/Portfolio')][1]",
+    "positions_iframe": "",
+    "positions_table": "table"
+  },
+
+  "dismiss_if_present": "xpath://*[self::a or self::button][@id='lnkViewAccounts' or normalize-space()='Remind me later' or normalize-space()='Not now' or normalize-space()='No thanks']",
+  "clicks_before_read": [],
+  "holdings_report_download": "",
+  "holdings_report_settings": {},
+  "column_aliases": {},
+  "skip_row_pattern": "(?i)\\b(total|subtotal|money)\\b"
+}

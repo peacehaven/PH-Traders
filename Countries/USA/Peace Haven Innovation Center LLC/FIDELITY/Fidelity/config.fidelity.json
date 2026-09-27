@@ -1,0 +1,70 @@
+{
+  "account_name": "Fidelity Account",
+  "credentials_env_prefix": "FIDELITY",
+  "login_url": "https://digital.fidelity.com/prgw/digital/login/full-page",
+  "positions_url": "https://digital.fidelity.com/ftgw/digital/portfolio/positions",
+  "chrome_profile_dir": ".chrome-profile-fidelity",
+  "download_dir": "downloads-fidelity",
+  "positions_source": "table",
+  "timeout_seconds": 30,
+  "login_timeout_seconds": 180,
+  "table_timeout_seconds": 90,
+  "selectors": {
+    "login_iframe": "",
+    "different_user_link": "xpath://*[self::a or self::button][contains(normalize-space(.), 'different username') or contains(normalize-space(.), 'Use a different')]",
+    "username": [
+      "#dom-username-input",
+      "#userId-input",
+      "input[autocomplete='username']",
+      "input[id*='user' i]"
+    ],
+    "password": [
+      "#dom-pswd-input",
+      "#password",
+      "input[type='password']"
+    ],
+    "submit": [
+      "#dom-login-button",
+      "#fs-login-button",
+      "xpath://*[self::button or self::a][normalize-space(.)='Log in' or normalize-space(.)='Log In']",
+      "button[type='submit']"
+    ],
+    "logged_in_marker": "xpath://*[contains(@class, 'acct-selector__acct-num') or contains(@class, 'ag-pinned-left-cols-container') or contains(@class, 'posweb-grid')][1]",
+    "positions_iframe": "",
+    "positions_table": "[role='grid'], table",
+    "login_error_retry": "xpath://*[self::a or self::button][@id='dom-sys-err-go-to-login-button' or contains(normalize-space(.), 'Go back to login')]"
+  },
+  "dismiss_if_present": "xpath://*[self::a or self::button][normalize-space()='Remind me later' or normalize-space()='Not now' or normalize-space()='No thanks' or normalize-space()='Continue' or normalize-space()='Got it']",
+  "clicks_before_read": [],
+  "column_aliases": {
+    "symbol": [
+      "sym",
+      "symbol",
+      "ticker"
+    ],
+    "quantity": [
+      "qty",
+      "quantity",
+      "shares"
+    ],
+    "market_value": [
+      "curVal",
+      "Current Value",
+      "market value",
+      "value"
+    ],
+    "unrealized_pnl": [
+      "totGLStk",
+      "Total Gain/Loss Dollar",
+      "unrealized gain/loss",
+      "total gain/loss"
+    ]
+  },
+  "skip_row_pattern": "",
+  "login_attempts": 3,
+  "login_mode": "automatic",
+  "manual_login_timeout_seconds": 300,
+  "signed_in_url_contains": "/ftgw/digital/",
+  "login_fallback_to_manual": true,
+  "attach_to_chrome": "127.0.0.1:9222"
+}

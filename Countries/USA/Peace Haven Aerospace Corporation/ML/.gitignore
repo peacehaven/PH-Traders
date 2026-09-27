@@ -1,0 +1,6 @@
+.env
+.chrome-profile/
+debug/
+positions*.json
+__pycache__/
+.pytest_cache/
