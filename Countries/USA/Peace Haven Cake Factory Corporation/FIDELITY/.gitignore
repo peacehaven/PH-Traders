@@ -1,0 +1,7 @@
+.venv/
+chrome-profile/
+__pycache__/
+.pytest_cache/
+debug/
+downloads/
+positions*.json

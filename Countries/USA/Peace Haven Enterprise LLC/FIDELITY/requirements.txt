@@ -1,0 +1,4 @@
+selenium>=4.20
+beautifulsoup4>=4.12
+pytest>=8.0
+keyring>=25.0
