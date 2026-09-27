@@ -1,0 +1,8 @@
+{
+  "USA.PHE": {
+    "consumer_key": "PHEAPIKEY",
+    "access_token": "ab441e7e1e737e640753",
+    "access_token_secret": "EPQXjH33ez1PkBK3seO/+iIrgaCD7x2tFViI87iIUM1n85fRWkMYEFb5cKSjKsH1K89U0pxbOJKjzbp4DQbtJl37/yDNb0q5KieEwpzxhax5gA0Ae0+1CM5E9IFE0O/li32sswVDG28J0nwqn5p6VwHp9KiJdtGV0QmXzC36KCneRccaaHqEQGQT2fu723uBuWq7Jz0bhLBGhporsgxIkJVcrglck9WaH3fO62iGIk95LrSUcKKgc79P6iSJQDJvnEwXOkOZLr9Ol8WdoKZoaCHoQTgP1Vsc3cecq8vA02IZgz8N2DuMhoo9EPsEXRQCXOsTOpleHFviHpL6qAwTAw==",
+    "folder": "~/ibkr-phe"
+  }
+}
