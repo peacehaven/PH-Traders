@@ -1,0 +1,47 @@
+PHE - IBKR account U23350571   (USA.PHE)
+==============================================================
+
+REAL MONEY. Every order asks you to type yes before it is sent.
+
+Keys stay where they are: this folder reads them from ~/ibkr-phe.
+That folder must contain private_signature.pem, private_encryption.pem
+and dhparam.pem.
+
+Open Git Bash and go to this folder:
+
+    cd ~/ibkr-per-company/PHE
+
+Checking the connection:
+
+    python ib.py test               SUCCESS plus the account id U23350571
+
+Looking (nothing is ever sent):
+
+    python ib.py holdings           cash, available funds, positions with P&L
+    python ib.py orders             working orders, with their ids
+
+Buying:
+
+    python ib.py buy IAU 1 --limit 82.00
+    python ib.py buy AAPL 2 --market
+    python ib.py buy IAU 1 --limit 82.00 --tif GTC
+    python ib.py buy IAU --dollars 250 --market      as many whole shares as 250 covers
+
+Selling:
+
+    python ib.py sell IAU 1 --limit 84.00
+    python ib.py sell NIO 50 --market
+
+Cancelling (the id comes from the orders command):
+
+    python ib.py cancel 123456789
+
+What the script refuses to do:
+
+  - sell more than the position, counting shares already committed to
+    working sell orders
+  - send anything without a typed yes
+  - send a fractional quantity: IBKR's API takes whole shares only
+  - trade at all when IBKR has not opened a trading session
+
+First time only:  pip install "ibind[oauth]"
