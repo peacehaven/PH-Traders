@@ -1,0 +1,8 @@
+{
+  "USA.PHC": {
+    "consumer_key": "PHCAPIKEY",
+    "access_token": "faef333798c03d6d26d2",
+    "access_token_secret": "s+jp9ISYHJS5uost/7NnWfymu2hEapB6lE+MSyRpB0YH7dJIJUOU0Odi7z9NCQjrwui8q69Qg0ZTyBZEfihPE7Jl8Qel8vIu0MxH2e/Jv/KlEIHv+JbZ38RDda6tg2/hgRvTRYJw9mU79KZLP6gFJJWeBYrbOYfIBXHrF8j3hDdNaei48eGpuP889agTVM8jbu6l96W3mKoscVApOnFMhtt8FMIbCjl6R205k4tXE9LsVJKgP+2aStXVE+RF1lMioS/iZetO0Rzr95hPp4OJJyqJ+uQQA4HjAuqnRGmruqTFJPJM0pkvaE2lPf2O76WOoTic5WnUSCQtYf8Rb9Qeog==",
+    "folder": "~/ibkr-phc"
+  }
+}

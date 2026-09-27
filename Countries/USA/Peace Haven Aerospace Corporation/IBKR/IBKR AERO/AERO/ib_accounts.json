@@ -1,0 +1,8 @@
+{
+  "USA.AERO": {
+    "consumer_key": "AEROAPIKY",
+    "access_token": "03001d45266108553694",
+    "access_token_secret": "JGsHUpiCdwk+39a3fvB6nfjZ6RJ9g8unispE84KxZ/blvWgUVugSkaFPcOBeFDcUcHfQTeicng7sm14fAsJTo8fvx/VnD3mx3s4RPHVs31YIT32kZk9zEIsT6XiQPZzidBZN8pbdaB/uzffMS00VOP5YWp+5y/jjUqLwgkCJDdDujGHfvUEuKRdaV0mNeUbSBNnptVAPuuOdz8GfB1O3FQY7CbPjIcT8q/1h8WTiseHj8BhQQNYNxkrrcaPIaC/W6f9hQ7pGb/w5WyLPIocNB4m9UcZsAU//6IAe/qt6YIF6GKrNf5XK+CJgVO/okHsTCFcuTxksBJusSJjmWOZC+A==",
+    "folder": "~/ibkr-aero"
+  }
+}
