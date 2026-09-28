@@ -1,0 +1,44 @@
+aero - ibkr account U26700634 (USA.AERO)
+==============================================================
+
+real money. every order prints in words and waits for a typed yes.
+
+all commands are lowercase. symbols, flags and the account name can all be
+typed in lowercase; the script upper-cases them internally.
+
+    cd ~/ibkr-per-company/aero
+
+checking the connection
+------------------------------
+    python ib.py test
+
+looking - nothing is ever sent
+------------------------------
+    python ib.py holdings
+    python ib.py orders
+
+buying
+------------------------------
+    python ib.py buy iau 1 --limit 82.00
+    python ib.py buy aapl 2 --market
+    python ib.py buy iau 1 --limit 82.00 --tif gtc
+    python ib.py buy iau --dollars 250 --market
+
+selling
+------------------------------
+    python ib.py sell iau 1 --limit 84.00
+    python ib.py sell nio 50 --market
+
+cancelling - the id comes from the orders command
+------------------------------
+    python ib.py cancel 123456789
+
+what it refuses to do
+------------------------------
+  - sell more than the position, counting shares already committed to
+    working sell orders
+  - send anything without a typed yes
+  - send a fractional quantity: ibkr's api takes whole shares only
+  - trade at all when ibkr has not opened a trading session
+
+first time only:  pip install "ibind[oauth]"
