@@ -1,13 +1,13 @@
-aero
+academy
 ==============================================================
 
-ibkr account U26700634 (USA.AERO).
-consumer key AEROAPIKY. keys are read from ~/ibkr-aero and are not
+ibkr account U5881272 (USA.ACADEMY).
+consumer key PEACAPIKY. keys are read from ~/ibkr-peace and are not
 copied into this folder.
 
 quick start
 ------------------------------
-    cd ~/ibkr-per-company/aero
+    cd ~/ibkr-per-company/academy
     python ib.py test
     python ib.py holdings
 
