@@ -1,6 +1,0 @@
-{
-  "api_key": "your-api-key-from-developers.kite.trade",
-  "api_secret": "your-api-secret",
-  "default_exchange": "NSE",
-  "default_product": "CNC"
-}
